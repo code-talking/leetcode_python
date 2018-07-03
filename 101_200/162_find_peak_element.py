@@ -29,5 +29,5 @@ class Solution:
 
 lst = [1, 2, 1, 3, 4, 5, 2, 4, 3]
 test = Solution()
-rst = test.find_peak_ele(lst)
-print('rst = ', rst, '\t\tnums = ', lst[rst])
+index = test.find_peak_ele(lst)
+print('index = ', index, '\t\tnums = ', lst[index])

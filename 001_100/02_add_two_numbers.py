@@ -4,7 +4,7 @@
     Date:   5/17/18
     Time:   7:36 PM
     Package 
-    File    2_add_two_numbers.py
+    File    02_add_two_numbers.py
     Description
     
 '''
@@ -12,6 +12,11 @@ class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
+    def print_ListNode(self, listnode):
+        while listnode is not None:
+            print(listnode.val)
+            listnode = listnode.next
 
 class Solution:
     def add_two_numbers(self, l1, l2):
@@ -38,4 +43,9 @@ l2.next = ListNode(1)
 l2.next.next = ListNode(3)
 
 rst = test.add_two_numbers(l1, l2)
-print('rst : ', rst)
+while rst is not None:
+    print(rst.val)
+    rst = rst.next
+
+if __name__ == '__main__':
+    print('hello')
